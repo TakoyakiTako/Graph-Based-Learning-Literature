@@ -1,7 +1,7 @@
 # ICML Graph Based Learning
 
-## ・Simplifying Graph Convolutional Networks
 
+<details><summary> ## ・Simplifying Graph Convolutional Networks </summary>
 GCNは最近のDeepLearningアプローチからひらめきを得ている
 結果として、不必要な複雑性と計算量を引き継いでしまった
 
@@ -13,6 +13,7 @@ SGCを提案
 ##### 実験
 単純化が精度に対して負の影響を与えないことを示した
 さらに大きいデータセットに対して自然な解釈が可能となり、FastGCNより2桁分ぶんスピードアップした
+</details>
 
 ## ・Disentangled Graph Convolutional Networks
 
