@@ -1,7 +1,7 @@
 # ICML Graph Based Learning
 
-
-##  <details><summary>・Simplifying Graph Convolutional Networks </summary>
+##・Simplifying Graph Convolutional Networks
+<details><summary>概要</summary>
 GCNは最近のDeepLearningアプローチからひらめきを得ている
 結果として、不必要な複雑性と計算量を引き継いでしまった
 
