@@ -2,8 +2,6 @@
 
 ## ・Simplifying Graph Convolutional Networks
 
-- どんな論文
-
 GCNは最近のDeepLearningアプローチからひらめきを得ている
 結果として、不必要な複雑性と計算量を引き継いでしまった
 
@@ -18,8 +16,6 @@ SGCを提案
 
 ## ・Disentangled Graph Convolutional Networks
 
-- どんな論文  
-
 既存のGraphデータに対するDLメソッドは潜在的な要素のもつれを無視している  
 しかし潜在的な要素のもつれを解いた表現を学習することは非常に難しいし、GNNの研究で未開のままである  
 
@@ -30,7 +26,7 @@ DisenGCN（disentangled graph convolutional network）という新しいGNNを�
 また理論的にroutingメカニズムの集合の性質を証明、そして実験的にもつれを解いた表現の学習の利点を示した。  
 
 ##### 実験
-・ Citeseer, Cora, and Pubmed for semi-supervised node  
+・Citeseer, Cora, and Pubmed for semi-supervised node  
 ・BlogCatalog, PPI, POS  for multi-label node classification  
 
 future work  
@@ -38,7 +34,6 @@ future work
 
 ## ・Position-aware Graph Neural Networks
 
-- どんな論文  
 ・広範囲なgraph構造の中のnodeの位置をとらえたnode埋め込みを学習することはgraph上の多くの予測タスクで重要  
 ・既存のGNNのアーキテクチャはノードのposition/locationなどをとらえる能力が制限されている  
 
