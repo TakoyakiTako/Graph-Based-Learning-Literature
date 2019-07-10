@@ -1,6 +1,6 @@
 # ICML Graph Based Learning
 
-##・Simplifying Graph Convolutional Networks
+## ・Simplifying Graph Convolutional Networks
 <details><summary>概要</summary>
 GCNは最近のDeepLearningアプローチからひらめきを得ている
 結果として、不必要な複雑性と計算量を引き継いでしまった
@@ -17,6 +17,7 @@ SGCを提案
 
 ## ・Disentangled Graph Convolutional Networks
 
+<details><summary>概要</summary>
 既存のGraphデータに対するDLメソッドは潜在的な要素のもつれを無視している  
 しかし潜在的な要素のもつれを解いた表現を学習することは非常に難しいし、GNNの研究で未開のままである  
 
@@ -32,9 +33,11 @@ DisenGCN（disentangled graph convolutional network）という新しいGNNを�
 
 future work  
 もつれを解いたノード表現が、より包括的なGraphを表現するようなGraph全体に対して単一の表現を導くために利用されうるかどうかを調査する  
+</details>
 
 ## ・Position-aware Graph Neural Networks
 
+<details><summary>概要</summary>
 ・広範囲なgraph構造の中のnodeの位置をとらえたnode埋め込みを学習することはgraph上の多くの予測タスクで重要  
 ・既存のGNNのアーキテクチャはノードのposition/locationなどをとらえる能力が制限されている  
 
@@ -53,6 +56,7 @@ future work
 ##### 実験  
 ・link prediction task	: Grid、Communities、PPI  
 ・community detection	: Communities、Emails、Protein  
+</details>
 
 ## ・GMNN: Graph Markov Neural Networks
 
