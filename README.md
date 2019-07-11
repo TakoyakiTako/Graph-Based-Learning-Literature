@@ -1,5 +1,7 @@
 # ICML Graph Based Learning
 
+### ICMLのGraphLearningの論文集めました
+
 ## ・Simplifying Graph Convolutional Networks
 <details><summary>概要</summary>
 GCNは最近のDeepLearningアプローチからひらめきを得ている
@@ -59,7 +61,114 @@ future work
 </details>
 
 ## ・GMNN: Graph Markov Neural Networks
+<details><summary>概要</summary>
+
+relational dataによるsemi-supervisedなobject classificationの研究
+
+以下の両方で広範囲で研究されているrelational relational dataにおける基本的な問題に取り組む
+statistical relational learning (例 relational Markov networks)
+graph neural networks (例 graph convolutional networks)
+
+統計的関係モデルはCRFを通して効率よくオブジェクトラベルの関係をモデル化できる
+GNNはend-to-endな学習を通して効率的にオブジェクト表現を学習できる
+
+
+#### 提案
+Graph Markov Neural Network (GMNN)
+
+統計的関係モデルとGNNの両方の利点を組み合わせた
+EMアルゴリズムによって効率的に学習し、CRFを持つオブジェクトラベルの同時分布をモデル化
+E-step
+GNNによりオブジェクトラベルの事後分布を予測するために効果的なオブジェクト表現を学習
+M-step
+別のGNNが局所的なラベルの依存関係をモデル化する
+
+#### 実験
+object classification：Cora, Citeseer, Pubmed（SOTA）
+link classification：Cora, Citeseer, Pubmed
+unsupervised node representation learning：Bitcoin, Alphahe Bitcoin OTC（SOTA）
+</details>
 
 ## ・DAG-GNN: DAG Structure Learning with Graph Neural Networks
+<details><summary>概要</summary>
+</details>
 
-- どんな論文
+## ・Learning Discrete Structures for Graph Neural Networks
+<details><summary>概要</summary>
+</details>
+
+## ・Self-Attention Graph Pooling
+<details><summary>概要</summary>
+</details>
+
+## ・Graph U-Net
+<details><summary>概要</summary>
+</details>
+
+## ・Deep Relational Pooling
+<details><summary>概要</summary>
+</details>
+
+## ・Distributed, Egocentric Representations of Graphs for Detecting Critical Structures
+<details><summary>概要</summary>
+</details>
+
+## ・Graph Element Networks: adaptive, structured computation and memory
+<details><summary>概要</summary>
+</details>
+
+## ・LatentGNN: Learning Efficient Non-local Relations for Visual Recognition
+<details><summary>概要</summary>
+</details>
+
+## ・Graph Matching Networks for Learning the Similarity of Graph Structured Objects
+<details><summary>概要</summary>
+</details>
+
+## ・Stochastic Blockmodels meet Graph Neural Networks
+<details><summary>概要</summary>
+</details>
+
+## ・Adversarial Attacks on Node Embeddings via Graph Poisoning
+<details><summary>概要</summary>
+</details>
+
+## ・MixHop: Higher-Order Graph Convolution Architectures via Sparsified Neighborhood Mixing
+<details><summary>概要</summary>
+</details>
+
+## ・Open Vocabulary Learning on Source Code with a Graph-Structured Cache
+<details><summary>概要</summary>
+</details>
+
+## ・Graphite: Iterative Deep Generative Modeling of Large Graphs
+<details><summary>概要</summary>
+</details>
+
+## ・Functional Transparency for Structured Data: a Game-Theoretic Approach
+<details><summary>概要</summary>
+</details>
+
+## ・Graph Convolutional Gaussian Processes
+<details><summary>概要</summary>
+</details>
+
+## ・Geometry Aware Convolutional Filters for Omnidirectional Images Representation
+<details><summary>概要</summary>
+</details>
+
+## ・Geometric Scattering for Graph Data Analysis
+<details><summary>概要</summary>
+</details>
+
+## ・GEOMetrics: Exploiting Geometric Structure for Graph-Encoded Objects
+<details><summary>概要</summary>
+</details>
+
+## ・Circuit-GNN: Graph Neural Networks for Distributed Circuit Design
+<details><summary>概要</summary>
+</details>
+
+## ・Graph Neural Network for Music Score Data and Modeling Expressive Piano Performance
+<details><summary>概要</summary>
+</details>
