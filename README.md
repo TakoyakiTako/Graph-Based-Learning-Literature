@@ -4,23 +4,23 @@
 
 ## ・Simplifying Graph Convolutional Networks
 <details><summary>概要</summary>
-GCNは最近のDeepLearningアプローチからひらめきを得ている
-結果として、不必要な複雑性と計算量を引き継いでしまった
+GCNは最近のDeepLearningアプローチからひらめきを得ている  
+結果として、不必要な複雑性と計算量を引き継いでしまった  
 
 ##### 提案
-SGCを提案
-継続的な非線形性を除き、連続した層の間の重み行列の崩壊を通して、上記のような過剰な複雑性を減らす
-理論的に結果として生じる線形モデルを分析し、固定されたlowpassfilterに一致する
+SGCを提案  
+継続的な非線形性を除き、連続した層の間の重み行列の崩壊を通して、上記のような過剰な複雑性を減らす  
+理論的に結果として生じる線形モデルを分析し、固定されたlowpassfilterに一致する  
 
 ##### 実験
-単純化が精度に対して負の影響を与えないことを示した
-さらに大きいデータセットに対して自然な解釈が可能となり、FastGCNより2桁分ぶんスピードアップした
+単純化が精度に対して負の影響を与えないことを示した  
+さらに大きいデータセットに対して自然な解釈が可能となり、FastGCNより2桁分ぶんスピードアップした  
 </details>
 
 ## ・Disentangled Graph Convolutional Networks
 
 <details><summary>概要</summary>
-既存のGraphデータに対するDLメソッドは潜在的な要素のもつれを無視している  
+既存のGraphデータに対するDLメソッドは潜在的な要素のもつれを無視している   
 しかし潜在的な要素のもつれを解いた表現を学習することは非常に難しいし、GNNの研究で未開のままである  
 
 ##### 提案  
@@ -33,7 +33,7 @@ DisenGCN（disentangled graph convolutional network）という新しいGNNを�
 ・Citeseer, Cora, and Pubmed for semi-supervised node  
 ・BlogCatalog, PPI, POS  for multi-label node classification  
 
-future work  
+#### future work  
 もつれを解いたノード表現が、より包括的なGraphを表現するようなGraph全体に対して単一の表現を導くために利用されうるかどうかを調査する  
 </details>
 
@@ -63,30 +63,30 @@ future work
 ## ・GMNN: Graph Markov Neural Networks
 <details><summary>概要</summary>
 
-relational dataによるsemi-supervisedなobject classificationの研究
+relational dataによるsemi-supervisedなobject classificationの研究  
 
-以下の両方で広範囲で研究されているrelational relational dataにおける基本的な問題に取り組む
-statistical relational learning (例 relational Markov networks)
-graph neural networks (例 graph convolutional networks)
+以下の両方で広範囲で研究されているrelational relational dataにおける基本的な問題に取り組む  
+statistical relational learning (例 relational Markov networks)  
+graph neural networks (例 graph convolutional networks)  
 
-統計的関係モデルはCRFを通して効率よくオブジェクトラベルの関係をモデル化できる
-GNNはend-to-endな学習を通して効率的にオブジェクト表現を学習できる
+統計的関係モデルはCRFを通して効率よくオブジェクトラベルの関係をモデル化できる  
+GNNはend-to-endな学習を通して効率的にオブジェクト表現を学習できる  
 
 
 #### 提案
-Graph Markov Neural Network (GMNN)
+Graph Markov Neural Network (GMNN)  
 
-統計的関係モデルとGNNの両方の利点を組み合わせた
-EMアルゴリズムによって効率的に学習し、CRFを持つオブジェクトラベルの同時分布をモデル化
-E-step
-GNNによりオブジェクトラベルの事後分布を予測するために効果的なオブジェクト表現を学習
-M-step
-別のGNNが局所的なラベルの依存関係をモデル化する
+統計的関係モデルとGNNの両方の利点を組み合わせた  
+EMアルゴリズムによって効率的に学習し、CRFを持つオブジェクトラベルの同時分布をモデル化  
+E-step  
+GNNによりオブジェクトラベルの事後分布を予測するために効果的なオブジェクト表現を学習  
+M-step  
+別のGNNが局所的なラベルの依存関係をモデル化する  
 
 #### 実験
-object classification：Cora, Citeseer, Pubmed（SOTA）
-link classification：Cora, Citeseer, Pubmed
-unsupervised node representation learning：Bitcoin, Alphahe Bitcoin OTC（SOTA）
+object classification：Cora, Citeseer, Pubmed（SOTA）  
+link classification：Cora, Citeseer, Pubmed  
+unsupervised node representation learning：Bitcoin, Alphahe Bitcoin OTC（SOTA）  
 </details>
 
 ## ・DAG-GNN: DAG Structure Learning with Graph Neural Networks
