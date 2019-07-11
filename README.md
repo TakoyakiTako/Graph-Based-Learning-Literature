@@ -91,6 +91,21 @@ unsupervised node representation learning：Bitcoin, Alphahe Bitcoin OTC（SOTA�
 
 ## ・DAG-GNN: DAG Structure Learning with Graph Neural Networks
 <details><summary>概要</summary>
+
+接続の分布のサンプルから正確な有向非巡回Graph（DAG、たどっても自分のノードには戻らないGraph）を学習することは難しい  
+それはGraphのノードの数において指数関数以上の探索空間があるためである（NP困難）  
+
+#### 提案  
+複雑な非線形マッピングをとらえる能力があるDLをモチベーションとして  
+deep generative modelを提案し、様々な構成上の制約に対してDAGを学習させる  
+
+Generative modelの中心で新しいGNNに基づいたvariational au-toencoder（DAG-GNN）を提案  
+モデルの豊富なcapacityに加えて、ベクトル値の変数に加えて離散変数も自然に取り扱える  
+GNNを使用することでパラメトリックモデルによって生成されたデータだけでなく、スカラー/ベクトルや連続/非連続などのデータにも対処することができる  
+
+#### 実験  
+dataset：Child, Alarm, Pigs, 線形と非線形のSEMsから生成された合成データ  
+
 </details>
 
 ## ・Learning Discrete Structures for Graph Neural Networks
