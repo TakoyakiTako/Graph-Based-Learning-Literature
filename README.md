@@ -110,18 +110,79 @@ dataset：Child, Alarm, Pigs, 線形と非線形のSEMsから生成された合�
 
 ## ・Learning Discrete Structures for Graph Neural Networks
 <details><summary>概要</summary>
+
+GNNはdatapoint間のスパースかつ離散な依存関係を組み合わせることが利点  
+しかし実際には現実世界のGraphはノイズがあり未完成なものがしばしばあるし、全部が利用できないことがある  
+
+#### 提案  
+Graphのエッジ上の個々の確率分布を学習する、に2つのレベルの課程を近似的に解決することで、Graph構造とGCNのパラメータを一緒に学数する  
+不完全なGraphが与えられたときだけでなくGraphが使用できない時もGCNが適用できるようになる  
+
+#### 実験  
+node classification  
+dataset:Wine Cancer Digits Citeseer Cora 20news FMA  
 </details>
 
 ## ・Self-Attention Graph Pooling
 <details><summary>概要</summary>
+
+GCNやGNNの手法は改善され精度が向上してきた  
+しかしGraphにおけるダウンサンプリングの手法はまだ難しく向上の余地がある  
+
+#### 提案  
+SAGPool（Self-Attention Graph Pooling）を提案  
+self attentionベースのGraph Pooling  
+比較的少ないパラメータ数でend to endで階層的なGraph表現を学習  
+self attentionはそれぞれのノードを次の層まで残すか残さないかを見分けるために使用  
+attentionスコアを計算するためのGraphConvをするのでノードの特徴とGraphトポロジーの2つを考慮したpooling methodを実現した  
+
+#### 実験  
+graph classification  
+datasets:D&D, PROTEINS, NCI1, NCI109, FRANKENSTEIN  
+
 </details>
 
 ## ・Graph U-Net
 <details><summary>概要</summary>
+
+CNNは画像上で自然に操作できる  
+しかぎGraphは同じようにはいかず難しい  
+
+画像は2次元の行使を持つGraphの特別なケースであり  
+Graph埋め込みタスクはセグメンテーションのようなピクセルごとに予測するタスクと一致する  
+
+U-netのようなenc-decアーキテクチャは多くの画素単位の予測タスクで応用されている一方でGraph データは同様の方法でうまくいかない  
+この理由としてGraph上でのpoolとupsampleの操作が自然ではないことがあげられる  
+
+#### 提案  
+新しいGraph pool(gPool)とGraph Upsample(gUnopol)を提案  
+gUnpoolはgPoolの逆を行う  
+gUnpool層は、GgPool層で選択されたノード情報の位置を使用して、raphをもとの構造に修復する  
+gPoolとgUnpoolを使用してU-net構成  
+
+#### 実験  
+node classification（dataset:Cora, Citeseer, Pubmed）  
+graph classification（dataset:D&D, PROTEINS, COLLAB）  
+既存のpool手法と比較して精度向上  
+
 </details>
 
 ## ・Deep Relational Pooling
 <details><summary>概要</summary>
+
+WeisfeilerLehman (WL) algorithm, graph Laplacians, and diffusionsをベースにそれらを超えたGNNの一般化に取り組む  
+
+#### 提案  
+新しいRelational Pooling (RP)  
+有限かつ部分的に交換可能な理論からきている  
+Graphに対して最大限の表現力を持つframeworkを提供する  
+RPは既存のGraph表現と一緒に働く  
+元のWL isomorphism testより強力  
+GraphClassificationにおいてRNNやCNNのようなアーキテクチャに対して理論的に良いアプローチとして使用可能  
+
+#### 実験  
+GraphClassification(datasets:HIV,MUV,Tox21)  
+
 </details>
 
 ## ・Distributed, Egocentric Representations of Graphs for Detecting Critical Structures
