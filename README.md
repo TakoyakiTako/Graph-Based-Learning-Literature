@@ -170,27 +170,59 @@ graph classification（dataset:D&D, PROTEINS, COLLAB）
 ## ・Deep Relational Pooling
 <details><summary>概要</summary>
 
-WeisfeilerLehman (WL) algorithm, graph Laplacians, and diffusionsをベースにそれらを超えたGNNの一般化に取り組む  
+・WeisfeilerLehman (WL) algorithm, graph Laplacians, and diffusionsをベースにそれらを超えたGNNの一般化に取り組む  
 
 #### 提案  
-新しいRelational Pooling (RP)  
-有限かつ部分的に交換可能な理論からきている  
-Graphに対して最大限の表現力を持つframeworkを提供する  
-RPは既存のGraph表現と一緒に働く  
-元のWL isomorphism testより強力  
-GraphClassificationにおいてRNNやCNNのようなアーキテクチャに対して理論的に良いアプローチとして使用可能  
+・新しいRelational Pooling (RP)  
+・有限かつ部分的に交換可能な理論からきている  
+・Graphに対して最大限の表現力を持つframeworkを提供する  
+・RPは既存のGraph表現と一緒に働く  
+・元のWL isomorphism testより強力  
+・GraphClassificationにおいてRNNやCNNのようなアーキテクチャに対して理論的に良いアプローチとして使用可能  
 
 #### 実験  
-GraphClassification(datasets:HIV,MUV,Tox21)  
+・GraphClassification(datasets:HIV,MUV,Tox21)  
 
 </details>
 
 ## ・Distributed, Egocentric Representations of Graphs for Detecting Critical Structures
 <details><summary>概要</summary>
+
+・graph emmbedding modelの重要な構造を見つける問題に取り組んだ  
+
+・既存のgraph emmbedding modelは欠落している  
+・global scaleにおいてタスクに特有な重要な構造を正確に検知する  
+
+#### 提案  
+・新しいGraph emmbedding model（Ego-CNNs）を提案  
+・正確に重要な構造を効率よく見つけるego-centrcな方法を使用して、各層でego-convolutions convolutionsを行う  
+・Ego-CNNはタスクモデルと一緒に訓練され、タスクに対する知識の説明/探索を助ける  
+見つけた構造を視覚化できる  
+・重要な構造を調査することはタスク予測の背後にある理由を説明することを助けてbioinformatics, cheminformatics, social network analysis等の多くの分野で重要な新しい知識の発見につながる  
+
+
+#### 実験  
+・Graph Classification（datasets:MUTAG,PTC,PROTEINS,NCI1, IMDB(B),IMDB(M),REDDIT(B),COLLAB）  
+・Visualization of Critical Structures  
+（Alkanes vs. Alcohols、Reddit）  
+
 </details>
 
 ## ・Graph Element Networks: adaptive, structured computation and memory
 <details><summary>概要</summary>
+・先天的なGraphの構造がない場合の空間的な処理をモデル化するGNNに取り組む  
+
+#### 提案  
+・graph element networks (GENs)を提案  
+・有限要素解析と同様に、GNNのノードを空間的な場所に割り当てて、空間を超えて定義された初期特性と同じ空間の結果特性の間の関係をモデル化するためのGraph上で定義された計算プロセスを使用する  
+・GNNを計算上の基盤として使用し、接続に加え空間的なノードの位置が空間の最も複雑な部分に注目し最適化させる  
+・さらにこの表現戦略は学習された入出力の関係が潜在空間のサイズを超えて一般化することを可能にし、accに対してprecision, trading computationの異なるレベルで同じモデルを走らせることができる  
+
+#### 実験  
+・traditional PDE problem(Omnipush data set)  
+・a physical prediction problem from robotics  
+・learning to predict scene images from novel viewpoints  
+
 </details>
 
 ## ・LatentGNN: Learning Efficient Non-local Relations for Visual Recognition
